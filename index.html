@@ -13,91 +13,117 @@
 
 <body>
     <!-- En-tête -->
-    <h1 class="entete">Stéphanie Michaud</h1>
-    <h3 class="entete">Chargée de Projet Digital - Junior</h3>
+    <header>
+        <h1 class="entete">Stéphanie Michaud</h1>
+        <h3 class="entete">Chargée de Projet Digital - Junior</h3>
 
-    <img src="ressources/images/cat-gd442940b2_1920.jpg" alt="Photo de profil de Stéphanie Michaud" width="240px"/>
-<br>
-<br>
-<!-- accès rapide x4 nav? -->
-
-<!-- bouton portfolio -->
-<a href="/blogfolio/blogfolio.html">Portfolio</a>
-<!-- bouton télécharger CV -->
-<button href="#">Téléchargez mon CV</button>
-<!-- bouton contact -->
-<a href="/contact/contact.html">Contactez moi</a>
-<!-- Picto LinkedIn -->
+        <img class="profilepic" src="ressources/images/cat-gd442940b2_1920.jpg" alt="Photo de profil de Stéphanie Michaud" width="240px"/>
+        <br>
+        <div>
+        <h2 class="">Sommaire</h2>
+        <p>Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
+        </div>
+        <br>
+        <!-- accès rapide x4 nav? -->
+        <!-- bouton portfolio -->
+        <a href="/blogfolio/blogfolio.html">Portfolio</a>
+        <!-- bouton télécharger CV -->
+        <button href="#">Téléchargez mon CV</button>
+        <!-- bouton contact -->
+        <a href="/contact/contact.html">Contactez moi</a>
+        <!-- Picto LinkedIn -->
+        <a href="#">In</a>
+    </header>
 
 <!-- SECTIONS -->
-<section class="xppro"></section>
-<!-- section 1 compétences -->
+    <main>
+        <!-- section 1 compétences -->
+        <section class="competences">
+            <!-- skills -->
+            <div class="skills">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <p>
 
-<!-- skills -->
-<div>
-    <h2 class="">Soft Skills</h2>
-    <ul>
-        <p>
+                    </p>
+                </ul>
+                <h2>Hard Skills</h2>
+                <ul>
+                    <p>
+                        
+                    </p>
+                </ul>
+            </div>
 
-        </p>
-    </ul>
-    <h2 class="">Hard Skills</h2>
-    <ul>
-        <p>
-            
-        </p>
-    </ul>
-</div>
+            <!-- formations-->
+            <div class="formations">
+                <h2>Formations</h2>
+                            <!-- on crée un lien vers un site externe -->
+                    <!-- l'attribut target avec la valeur _blank nous permet d'ouvrir un nouvel onglet -->
+                <a href="" target="_blank">Nom</a> 
+                <p> <!-- On peut mettre en valeur le texte grâce des balises simples -->
+                    <i>Septembre 2022</i>, Formation <b>Chargée de Projet Digital</b> en
+                    distanciel avec l'école <u>Webforce 3</u>, que je
+                    <span class="boldred">ne recommande pas</span> pour son
+                    <mark>manque certain</mark> de communication <strong>et d'organisation</strong>.
+                </p>
 
-<!-- formations-->
-<div>
-    <h2 class="">Formations</h2>
-                <!-- on crée un lien vers un site externe -->
-        <!-- l'attribut target avec la valeur _blank nous permet d'ouvrir un nouvel onglet -->
-      <a href="" target="_blank">Nom</a> 
+                <h2>Stage</h2>
+                    <ul>
+                        <li>
+                            <a href="https://romaneche-thorins.fr/fr/" target="_blank">Mairie de Romanèche-Thorins</a>
+                            <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Autre</a>
+                            <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
+                        </li>
+                    </ul>
+            </div>
 
-    <h2 class="">Stage</h2>
-      <a href="" target="_blank">Nom</a> 
-</div>
+            <!-- Loisirs-->
+            <div class="loisirs">
+                <h2>Intérêts</h2>
+                <p></p>
+            </div>
+        </section>
 
-<!-- Loisirs-->
-<div>
-    <h2 class="">Intérêts</h2>
-    <p></p>
-</div>
+    <!-- section 2 portfolio -->
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <!-- 1-->
+            <div>
+            <img src="/ressources/images/stellers-sea-eagle-gff32eb085_1920.jpg" width="240px"/>
+            <p></p>
+            </div>
+            <!-- 2-->
+            <div></div>
+            <p></p>
+            <!-- 3-->
+            <div></div>
+            <p>Crash against wall but walk away like nothing happened i vomit in the bed in the middle of the night or unwrap toilet paper for lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back and poop on grasses.</p>
+            <!-- 4-->
+            <div></div>
+            <p></p>
 
-<!-- section 2 portfolio -->
-    <section class="portfolio">
-        <!-- 1-->
-        <div></div>
-
-        <!-- 2-->
-        <div></div>
-
-        <!-- 3-->
-        <div></div>
+            <!-- bouton lien page blogfolio-->
+            <a href="/blogfolio/blogfolio.html">Découvrez mes créations</a>
+        </section>
         
-        <!-- 4-->
-        <div></div>
+    </main>
+    <footer>
+        <div class="basdepage">
+                <p>Je suis disponible de suite, contactez moi !</p>
+                <h2 class="coordonnees">Coordonnées</h2>
+            <address>
+                    <!-- lien vers notre courriel -->
+                <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
+                <br>
+                    <!-- lien pour le téléphone -->
+                <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
+            </address>
+        </div>
 
-        <!-- bouton lien page blogfolio-->
-        <a href="/blogfolio/blogfolio.html">Découvrez mes créations</a>
-    </section>
+    </footer>
 </body>
-
-<footer>
-    <div class="basdepage">
-        <p>Je suis disponible de suite, contactez moi !</p>
-        <h2 class="coordonnees">Coordonnées</h2>
-        <address>
-            <!-- lien vers notre courriel -->
-            <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
-            <br>
-            <!-- lien pour le téléphone -->
-            <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
-        </address>
-    </div>
-
-</footer>
-
 </html>

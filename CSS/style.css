@@ -1,11 +1,36 @@
-.entete {
+/*.entete {
     text-align: center;
     background-color: cadetblue;
+}
+*/
+
+header {
+    text-align: center;
+    background-color: cadetblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
 }
 
 .xppro {
     background-color: beige;
 }
 .basdepage {
-    background-color: rgb(102, 15, 0);
+    background-color: rgb(4, 57, 61);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+.boldred
+{
+    color: rgb(255, 6, 6);
+    text-transform: uppercase;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.liste {
+    list-style: square;
 }
