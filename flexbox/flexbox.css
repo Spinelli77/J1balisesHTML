@@ -27,7 +27,7 @@ div:last-of-type {
 }*/
 
 div:first-of-type:hover {
-    
+    background: rgb(91, 236, 229);
 }
 div:last-of-type:hover {
     box-shadow: rgba(248, 118, 118, 0.20) 10px -50px 36px -28px inset;
@@ -42,6 +42,7 @@ h2{
 .flex {
     display: flex;
 }
+/* déplacement axe principal */
 .flex-start {
     justify-content: flex-start;
 }
@@ -58,12 +59,13 @@ h2{
     justify-content: space-around;
 }
 
-
+/* separation */
 .separation{
     height: 50px;
     background-color: brown!important;
 }
 
+/* déplacement axe secondaire */
 .container{
     padding: 5px;
     background: yellow;

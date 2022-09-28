@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'TAN-PEARL';
+	src: url(‘/font/TAN-PEARL.woff2’) format(‘woff2’),
+		url(‘/font/TAN-PEARL.ttf’) format(‘truetype’)
+}
+@font-face {
+	font-family: 'DancingScript';
+	src: url(‘/font/TAN-PEARL.ttf’) format(‘truetype’)
+}
+H1 {
+	font-family: 'TAN-PEARL', serif;
+}
+h2 {
+    font-family: 'DancingScript-Regular', cursive;
+}
+body {
+    font-family: sans-serif;
+}

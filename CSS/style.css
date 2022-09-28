@@ -1,28 +1,79 @@
-/*.entete {
-    text-align: center;
-    background-color: cadetblue;
-}
-*/
 
+
+                                                    /* ENTETE */
 header {
-    text-align: center;
     background-color: cadetblue;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 20px;
     padding: 20px;
 }
-
-main {
-    padding: 20px;
-}
-
-.basdepage {
-    background-color: rgb(4, 57, 61);
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+h1 {
     text-align: center;
-    color: #fff;
+    font-family: 'Passions Conflict';
+}
+h3 {
+    text-align: center;
+}
+header h2 {
+    text-align: center;
+    margin-bottom: -6px;
+    color: white;
+}
+
+header img {
+    margin: 50px;
+    border-radius: 50%;
+    
+}
+.sommaire {
+    border: 1px solid white;
+    width: 700px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.37);
+    text-align: center justify;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
+    justify-content: center;
+    }
+    nav {
+        text-align: center;
+        
+    }
+                                                       /* MAIN */
+
+.flex{
+    display: flex;
+}
+.container {
+    margin: 10px;
+    padding: 10px;
+    background: rgba(184, 184, 183, 0.726);
+    width: 50%;
+    flex-direction: row;
+}
+.contain {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(252, 214, 237);
+    width: 50%;
+    flex-direction: row;
+}
+
+
+.separation {
+    height: 10px;
+    background-color: rgb(255, 241, 203)!important; 
+}
+.interetcontact {
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    
+}
+.portfolio {
+    padding: 20px;
+    border: 1px solid black;
 }
 
 .boldred
@@ -47,4 +98,12 @@ h2 {
 .fa-location-dot
 {
     color: coral;
+}
+.basdepage {
+    background-color: rgb(4, 57, 61);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
 }
