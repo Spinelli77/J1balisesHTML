@@ -12,9 +12,13 @@ header {
     padding: 20px;
 }
 
+main {
+    padding: 20px;
+}
 .xppro {
     background-color: beige;
 }
+
 .basdepage {
     background-color: rgb(4, 57, 61);
     padding: 20px;
@@ -23,14 +27,27 @@ header {
     text-align: center;
     color: #fff;
 }
+
 .boldred
 {
     color: rgb(255, 6, 6);
     text-transform: uppercase;
+    font-weight: bold;
 }
+
 h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .liste {
     list-style: square;
+}
+
+.retouraccueil {
+    color: chartreuse;
+}
+
+.fa-solid
+{
+    color: coral;
 }
