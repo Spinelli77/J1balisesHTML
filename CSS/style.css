@@ -1,31 +1,37 @@
 
 
                                                     /* ENTETE */
+.flex {
+display: flex;
+}
+
 header {
     background-color: cadetblue;
     /*margin-top: 20px;*/
     margin-bottom: 20px;
     padding: 20px;
 }
-h1 {
-    text-align: center;
+.entete {
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+}
+.monNom {
+    text-align: left;
     font-family: 'Passions Conflict';
-    font-size: 200px;
-}
-h3 {
-    text-align: center;
-}
-header h2 {
-    text-align: center;
-    margin-bottom: -6px;
-    color: white;
+    font-size: 100px;
 }
 
-header img {
-    margin: 50px;
+img {
     border-radius: 50%;
-    
+    margin: 20px;
 }
+.noms {
+    margin-left: 30px;
+}
+
+
 .sommaire {
     border: 1px solid white;
     width: 1000px;
@@ -36,23 +42,42 @@ header img {
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
     margin: auto;
     }
-    nav {
-        
-        
+    header h2 {
+        text-align: center;
+        margin-bottom: -6px;
+        color: white;
     }
-                                                       /* MAIN */
+                                            /*nav*/
+    .around {
+        justify-content: space-around;
+    }
+                                         /* section competences/formastage */
 
-.flex{
-    display: flex;
-}
+
 .container {
-    margin: 10px;
-    padding: 10px;
-    background: rgba(184, 184, 183, 0.726);
-    width: 50%;
+    margin: auto;
+    padding: 20px;
     flex-direction: row-reverse;
+    justify-content: space-between
+    
+}
+
+#competences {
+    width: 65%;
+    text-align: left;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
+    
+}
+#formastage {
+    border-right-color: 1px #fff;
+    
 }
 .separation1 {
+    margin: 5px;
     height: 10px;
     background-color: rgb(255, 255, 255); 
 }
@@ -60,15 +85,12 @@ header img {
     margin: 10px;
     padding: 10px;
     background: rgb(252, 214, 237);
-    width: 50%;
+    width: 100%;
     flex-direction: row;
 }
-.between {
-    justify-content: space-between;
-}
-
 
 .separation {
+    margin: 5px;
     height: 10px;
     background-color: rgb(255, 241, 203)!important; 
 }
@@ -107,6 +129,11 @@ h2 {
 {
     color: coral;
 }
+
+
+/*==============================================================
+                       PAGE CONTACT / CONTACT FORM
+================================================================*/
 .basdepage {
     background-color: rgb(4, 57, 61);
     padding: 20px;
@@ -115,3 +142,28 @@ h2 {
     text-align: center;
     color: #fff;
 }
+
+/*------------------FORM----------------------*/
+form {
+    width: 500px;
+    margin: auto;
+    background-color: blueviolet;
+}
+form input {
+    border: 2px solid #fff;
+    border-radius: 100em;
+    color: rgb(1, 36, 36);
+    font-size: 2.5em;
+    outline: none;
+    width: 100%;
+
+}
+form input:focus {
+    border: 5px solid rgb(1, 187, 110);
+}
+form input:not(:focus):invalid {
+    border: 2px solid red;
+    background: red;
+    color: white;
+}
+
