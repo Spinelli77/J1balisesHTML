@@ -1,0 +1,167 @@
+
+
+                                                    /* ENTETE */
+.flex {
+display: flex;
+}
+
+header {
+    background-color: cadetblue;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.entete {
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+.monNom {
+    text-align: left;
+    font-family: 'Passions Conflict';
+    font-size: 100px;
+}
+
+img {
+    border-radius: 50%;
+    margin: 20px;
+}
+.noms {
+    margin-left: 30px;
+}
+
+
+.sommaire {
+    border: 1px solid white;
+    width: 1000px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.37);
+    text-align: center justify;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
+    margin: auto;
+    }
+    header h2 {
+        margin-left: 30px;
+        margin-bottom: -6px;
+        color: white;
+    }
+                                            /*nav*/
+    .around {
+        justify-content: space-around;
+    }
+                                         /* section competences/formastage */
+
+
+.container {
+    margin: auto;
+    padding: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between
+    
+}
+
+#competences {
+    width: 65%;
+    text-align: left;
+    background-color: aliceblue;
+    border: 2px solid gray;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
+    
+}
+#formastage {
+    border-right-color: 1px #fff;
+    
+}
+.separation1 {
+    margin: 5px;
+    height: 10px;
+    background-color: rgb(255, 255, 255); 
+}
+.contain {
+    margin: 10px;
+    padding: 10px;
+    background: rgb(252, 214, 237);
+    width: 100%;
+    flex-direction: row;
+}
+
+.separation {
+    margin: 5px;
+    height: 10px;
+    background-color: rgb(255, 241, 203)!important; 
+}
+.interetcontact {
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    
+}
+.portfolio {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.boldred
+{
+    color: rgb(255, 6, 6);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.liste {
+    list-style: square;
+}
+
+.retouraccueil {
+    color: chartreuse;
+}
+
+.fa-location-dot
+{
+    color: coral;
+}
+
+
+/*==============================================================
+                       PAGE CONTACT / CONTACT FORM
+================================================================*/
+.basdepage {
+    background-color: rgb(4, 57, 61);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+/*------------------FORM----------------------*/
+form {
+    width: 500px;
+    margin: auto;
+    background-color: blueviolet;
+}
+form input {
+    border: 2px solid #fff;
+    border-radius: 100em;
+    color: rgb(1, 36, 36);
+    font-size: 2.5em;
+    outline: none;
+    width: 100%;
+
+}
+form input:focus {
+    border: 5px solid rgb(1, 187, 110);
+}
+form input:not(:focus):invalid {
+    border: 2px solid red;
+    background: red;
+    color: white;
+}
+
