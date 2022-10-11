@@ -2,3 +2,15 @@
     background-color: bisque;
 }
 /*SCROLL SPY*/
+.navbar-brand {
+    width: 500px;
+}
+.carousel-inner {
+    height: 500px;
+}
+#carousel {
+    margin: 50px;
+}
+.carousel-item {
+    height: 500px;
+}

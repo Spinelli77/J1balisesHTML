@@ -7,13 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lien vers css -->
     <link rel="stylesheet" href="CSS/style.css"/>
-    <!-- Google font -->
+    <!-- Google font h1 -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
     </style>
-    <!-- BOOTSTRAP CSS + js -->
+    <!-- Google font monNom -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap');
+        </style>
+    <!-- CDN BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    
     <!-- icones en CDN font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- lien vers css -->
@@ -23,36 +27,58 @@
 </head>
 
 <body>
-    <!-- En-tête -->
+    <div id="page" class="container"></div>
+                    <!--============ En-tête ================-->
     <header>
-        <div class="flex entete">
-            <img src="ressources/images/cat-gd442940b2_1920.jpg" alt="Photo de profil de Stéphanie Michaud" width="240px"/>
-            <div class="noms">
-            <p class="monNom">Stéphanie Michaud</p>
-            <h1>Chargée de Projet Digital</h1>
+        <nav>
+            <div class="navbar navbar-expand-md">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav nav-pills mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="#">BlogFolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Icons</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="row entete justify-content-center">
+            <img class="col-auto rounded shadow-sm" src="https://source.unsplash.com/random/" alt="Photo de profil de Stéphanie Michaud" />
+
+            <div class="w-100"></div>
+            <div class="monNom col-8">
+                <p>Stéphanie Michaud</p>
+                <h1>Chargée de Projet Digital - Développeuse Web</h1>
             </div>
         </div>
-            <br>
-            <h2>Sommaire</h2>
-            <p class="sommaire">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
+<!------------------------------ section 1/4 RESUME ------------------------------->
+        <div class="row resume ">
+            <h2>Resume</h2>
+            <p class="col-lg-8 sommaire">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
+            
         
-        <br>
-        <!-- accès rapide x4 nav? -->
-        <nav class="flex around">
-            <!-- bouton portfolio -->
-            <a href="/blogfolio/blogfolio.html">Portfolio</a>
-            <!-- bouton télécharger CV -->
-            <button href="#">Téléchargez mon CV</button>
-            <!-- bouton contact -->
-            <a href="/contact/contact.html">Contactez moi</a>
-            <!-- Picto LinkedIn -->
-            <a href="#">In</a>
-        </nav>
+            <!-- télécharger PJ -->
+        
+            <button class="col-3 btn btn-warning">Télécharger le CV</button>
+        
+    </div>
     </header>
-
-<!-- SECTIONS -->
+<!----------------------- Fin de section 1/4 RESUME ---------------------------------->
+                    <!--========= Fin de En-tête ============-->
+                    <!--========= SECTIONS MAIN ===============-->
     <main>
-        <!-- section skills et compétences -->
+        <!-- section 2/4 skills et compétences -->
         <section id="container" class="flex container" >
             <!-- skills -->
             <div id="competences" aria-labelledby="competences">
@@ -158,6 +184,7 @@
         </section>
         
     </main>
+                    <!--============ Fin de SECTION MAIN =============-->
     <footer>
         <div class="basdepage">
                 <h2>Bla bla bla</h2>
@@ -167,5 +194,9 @@
             
         </div>
     </footer>
+
+    </div>
+    <!-- CDN BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
