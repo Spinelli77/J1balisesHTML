@@ -27,61 +27,40 @@
 </head>
 
 <body>
-    <div id="page" class="container"></div>
+    <div id="page" class="container-fluid">
                     <!--============ En-tête ================-->
-    <header>
-        <nav>
-            <div class="navbar navbar-expand-md">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav nav-pills mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="#">BlogFolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Icons</a>
-                  </li>
-                </ul>
-              </div>
+        <header>
+            <div class="row entete justify-content-center">
+                <div class="row align-items-start col-lg-4 justify-content-start">1</div>
+                <div class="centrale2 navbar col-lg-4 justify-content-center">       
+                    <img class="logo rounded shadow-sm img-thumbnail" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
+                    <div class="w-100"></div>
+                    <p class="monNom">Stéphanie Michaud</p>  
+                </div>
+                <div class="row align-items-start col-lg-4 justify-content-end">3</div>
             </div>
-          </nav>
-        <div class="row entete justify-content-center">
-            <img class="col-auto rounded shadow-sm" src="https://source.unsplash.com/random/" alt="Photo de profil de Stéphanie Michaud" />
-
-            <div class="w-100"></div>
-            <div class="monNom col-8">
-                <p>Stéphanie Michaud</p>
-                <h1>Chargée de Projet Digital - Développeuse Web</h1>
-            </div>
-        </div>
+        </header>
+        <h1>Chargée de Projet Digital - Développeuse Web</h1>
+        <main>    
 <!------------------------------ section 1/4 RESUME ------------------------------->
-        <div class="row resume ">
+        <section class="row resume">
             <h2>Resume</h2>
-            <p class="col-lg-8 sommaire">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
-            
-        
+            <div class="sommaire col-lg-8">
+                <p class="col-lg-auto">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
+            </div>
             <!-- télécharger PJ -->
-        
-            <button class="col-3 btn btn-warning">Télécharger le CV</button>
-        
-    </div>
-    </header>
+            <div class="col-lg-4 text-center align-self-center">
+                <button class="btn btn-warning w-75"><span class="fas fa-download mr-2"></span> Télécharger le CV</button>
+            </div>
+        </section>
 <!----------------------- Fin de section 1/4 RESUME ---------------------------------->
                     <!--========= Fin de En-tête ============-->
                     <!--========= SECTIONS MAIN ===============-->
-    <main>
+    
         <!-- section 2/4 skills et compétences -->
-        <section id="container" class="flex container" >
-            <!-- skills -->
-            <div id="competences" aria-labelledby="competences">
+        <section class="row justify-content-between" >
+             <!-- skills -->
+             <div class="skills col-lg-3" aria-labelledby="competences">
                 <h2>Soft Skills</h2>
                 <ul>
                     <p>BLA 1</p>
@@ -97,9 +76,8 @@
                     <p>BLA 1</p>
                 </ul>
             </div>
-            <div class="separation1"></div>
             <!-- formations-->
-            <div id="formastage" aria-labelledby="formations" >
+            <div class="formastage col-lg-8 align-self-center" aria-labelledby="formations" >
                 <h2>Formations</h2>
                             <!-- on crée un lien vers un site externe -->
                     <!-- l'attribut target avec la valeur _blank nous permet d'ouvrir un nouvel onglet -->
@@ -115,7 +93,6 @@
                     <span class="boldred">ne recommande pas</span> pour son
                     <mark>manque certain</mark> de communication <strong>et d'organisation</strong>.
                 </p>
-
                 <h2>Stage</h2>
                     <ul class="liste">
                         <li>
@@ -129,33 +106,8 @@
                     </ul>
             </div>
         </section>
-        <div class="separation"></div>
-        <!-- section 3 interetcontact -->
-        <section class="flex contain">
-            <!-- Contact-->
-            <div id="contact" aria-labelledby="competences">
-                <h2>Contact</h2>
-                <address>
-                    <!-- lien vers notre courriel -->
-                    <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
-                    <br>
-                        <!-- lien pour le téléphone -->
-                    <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
-                    <br>
-                    <i class="fa-solid fa-location-dot"></i><span> Localisation</span>
-                </address>
-            </div>
-            <!-- Loisirs-->
-            <div id="loisirs" aria-labelledby="loisirs">
-                <h2>Intérêts</h2>
-                <i class="fa-solid fa-cat"></i>
-                <i class="fa-solid fa-feather-pointed"></i>
-                <i class="fa-sharp fa-solid fa-mobile-screen"></i>
-            </div> 
-        </section>
-
     <!-- section 2 portfolio -->
-        <section class="portfolio">
+        <section class="row portfolio">
             <h2>Portfolio</h2>
             <!-- 1 mockup -->
             <div>
@@ -164,8 +116,8 @@
             </div>
             <!-- image-->
             <div>
-                <img src="/ressources/images/heart-g3b97e0e26_1920.jpg" width="200
-            px"/>
+                <img class="rounded shadow-sm " src="https://source.unsplash.com/random/" alt="vignette" width="200
+                px"/> 
                 <p>Caticus cuteicus bawl under human beds and ask for petting see brother cat receive pets, attack out of jealousy</p>
             </div>
             <!-- 3 vidéo-->
@@ -182,21 +134,47 @@
             <!-- bouton lien page blogfolio-->
             <a href="/blogfolio/blogfolio.html">Découvrez mes créations</a>
         </section>
+        <!-- Loisirs-->
+        <div id="loisirs" aria-labelledby="loisirs">
+            <h2>Intérêts</h2>
+            <i class="fa-solid fa-cat"></i>
+            <i class="fa-solid fa-feather-pointed"></i>
+            <i class="fa-sharp fa-solid fa-mobile-screen"></i>
+        </div>
         
     </main>
                     <!--============ Fin de SECTION MAIN =============-->
-    <footer>
-        <div class="basdepage">
+    <footer class="row justify-content-between">
+         <!-- Contact-->
+         <div class="centrale2 navbar col-lg-4 justify-content-start ">       
+            <img class="logofooter rounded shadow-sm img-thumbnail" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
+            <div class="w-100"></div>
+            <p class="monNom">Stéphanie Michaud</p>  
+        </div>
+         <div class="contact col-3" aria-labelledby="competences">
+            <h2>Contact</h2>
+            <address>
+                <!-- lien vers notre courriel -->
+                <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
+                <br>
+                    <!-- lien pour le téléphone -->
+                <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
+                <br>
+                <i class="fa-solid fa-location-dot"></i><span> Localisation</span>
+            </address>
+        </div>
+        <div class="basdepage col-3">
                 <h2>Bla bla bla</h2>
                 <p>Bla bla bla</p>
                 <p>Mentions légales, droits, plan du site</p>
                 <i class="fa-sharp fa-solid fa-copyright"></i>
-            
         </div>
-    </footer>
+</footer>
 
     </div>
-    <!-- CDN BOOTSTRAP JS -->
+<!-- CDN BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<!-- SCRIPT JS -->
+<script src="/Site CV/Js/script.js"></script>
 </body>
 </html>

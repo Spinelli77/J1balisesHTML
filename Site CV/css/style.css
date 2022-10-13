@@ -4,94 +4,69 @@
 body {
     margin: auto 20px;
 }
-                                                 .entete {
+* {
+    outline: 1px solid black;
+}
+header {
     background-color: cadetblue;
-    padding: 10px;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    clip-path:ellipse(50% 50%);
+    object-fit: cover;
+}
+.monNom {
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center; 
 }
 h1 {
     font-family: 'Annie Use Your Telescope', cursive;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 h2 {
     font-family: 'Annie Use Your Telescope', cursive;
 }
-.monNom p {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 50px;
-    color: white;
+.resume h2 {
+    align-self: baseline;
 }
-.monNom {
-    text-align: center;
-}
-.resume p {
+.sommaire p {
    border: 1px solid khaki;
    border-radius: 20px;
-}
-header img {
-    border: 1px solid black;
-    width: 150px;
-    height: 100px;
+   text-align: justify;
+   padding: 10px;
+   margin-top: 15px;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #ffc107;
 }
-
-/*.flex {
-display: flex;
-}
-
-header {
-    background-color: cadetblue;
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.entete {
-    flex-direction: row;
-    width: 100%;
-    text-align: left;
-}
-.monNom {
-    text-align: left;
-    font-family: 'Passions Conflict';
-    font-size: 100px;
-}
-
-
-.noms {
-    margin-left: 30px;
-}
-
-
-.sommaire {
-    border: 1px solid white;
-    width: 1000px;
-    padding: 20px;
+.skills {
+    margin-top: 10px;
+    background-color: rgb(229, 231, 219);
+    border: 2px solid gray;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.37);
-    text-align: center justify;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
-    margin: auto;
-    }
-    header h2 {
-        margin-left: 30px;
-        margin-bottom: -6px;
-        color: white;
-    }*/
-                                            /*nav*/
-   /* .around {
-        justify-content: space-around;
-    }*/
-                                         /* section competences/formastage */
-
-/*
-.container {
-    margin: auto;
     padding: 20px;
-    flex-direction: row-reverse;
-    justify-content: space-between
-    
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
+    margin-left: 11px;
 }
+.liste {
+    list-style: square;
+}
+.portfolio {
+    margin-top: 20px;
+}
+footer {
+    background-color: cadetblue;
+}
+.logofooter {
+    width: 100px;
+}
+/*
+
 
 #competences {
     width: 65%;
@@ -120,11 +95,7 @@ header {
     flex-direction: row;
 }
 
-.separation {
-    margin: 5px;
-    height: 10px;
-    background-color: rgb(255, 241, 203)!important; 
-}
+
 .interetcontact {
     width: 100px;
     padding: 20px;
@@ -144,17 +115,10 @@ header {
     font-weight: bold;
 }
 
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-.liste {
-    list-style: square;
-}
 
-.retouraccueil {
-    color: chartreuse;
-}
+
+
 
 .fa-location-dot
 {
@@ -175,7 +139,9 @@ h2 {
     text-align: center;
     color: #fff;
 }*/
-
+.retouraccueil {
+    color: chartreuse;
+}
 /*------------------FORM----------------------*/
 form {
     width: 500px;
