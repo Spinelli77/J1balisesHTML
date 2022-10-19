@@ -1,0 +1,50 @@
+.swiper {
+    width: 600px;
+    height: 400px;
+}
+.swiper img, .swiper2 img, .swiper3 img {
+    width: 100%;
+}
+.swiper2 {
+    width: 500px;
+    margin: 3rem auto;
+    max-height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.swiper2 .swiper-button-prev, .swiper2 .swiper-button-next {
+    color: black;
+}
+.swiper3 {
+        width: 500px;
+        margin: 3rem auto;
+        max-height: 800px;
+        position: relative;
+        overflow: hidden;
+}
+.swiper3 .swiper-button-next, .swiper3 .swiper-button-prev {
+    color: coral;
+    font-weight: bold;
+
+}
+.swiper4 {
+    width: 750px;
+    margin: 3rem auto;
+    max-height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.swiper5 {
+    width: 700px;
+    margin: 3rem auto;
+    max-height: 600px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.swiper5 .swiper-slide {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    
+}
