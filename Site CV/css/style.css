@@ -2,128 +2,174 @@
 
                                                  /* ENTETE */
 body {
-    margin: auto 20px;
+    margin: auto 10px;
 }
 * {
     outline: 1px solid black;
 }
+
+.entete li {
+    list-style: none;
+    background-color:rgb(255, 254, 248);
+}
 header {
     background-color: cadetblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    width: 100%;
 }
-.logo {
+
+.logo-burger, .logofooter {
     width: 150px;
-    height: 150px;
-    clip-path:ellipse(50% 50%);
-    object-fit: cover;
+    height: 100px; 
 }
-.monNom {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 60px;
-    color: rgb(0, 0, 0);
-    text-align: center; 
+
+.logo-central {
+    width: 200px;
+    height: 150px; 
 }
+
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
 h1 {
     font-family: 'Annie Use Your Telescope', cursive;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    font-size: 60px;
+    color: black;
     text-align: center;
+    text-shadow: khaki 1px 0 5px;
+    margin: 0 0 30px 0;
+    padding: 30px 0;
+    
 }
+.indication-couleur {
+    background: linear-gradient(cadetblue, 50%, white);
+    width: 100%;
+  }
 h2 {
     font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: bold;
 }
-.resume h2 {
-    align-self: baseline;
+h2::first-letter {
+    color: khaki;
+    font-size: 130%;
+  }
+.resume, .portfolio {
+    background-color: rgb(255, 253, 241);
+    margin: 30px auto;
+    width: 100%;
 }
 .sommaire p {
-   border: 1px solid khaki;
-   border-radius: 20px;
+    border-left: 5px solid cadetblue;
+    border-radius: 5px;
+    border-bottom: 1px dotted cadetblue;
+   border-radius: 5px;
    text-align: justify;
-   padding: 10px;
+   padding: 10px auto;
    margin-top: 15px;
+   padding: 5px;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #ffc107;
+.btn-cv{
+    background-color: khaki;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.resume .btn-cv:hover {
+    background-color: cadetblue;
+    color: white;
+}
+.skillsetcompetences {
+    /* margin: auto 20px; */
 }
 .skills {
-    margin-top: 10px;
-    background-color: rgb(229, 231, 219);
-    border: 2px solid gray;
+    
+    background-color: cadetblue;
+    color: white;
     border-radius: 20px;
-    padding: 20px;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
-    margin-left: 11px;
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+    
+}
+.skills li {
+    list-style: none;
+}
+.formastage {
+    border-left: 5px solid khaki;
+    border-radius: 5px;
+    border-bottom: 1px dotted khaki;
 }
 .liste {
     list-style: square;
+    color: cadetblue;
 }
+.liste p {
+    color: black;
+}
+.hardskills {
+    margin: 30px 0;
+}
+
 .portfolio {
     margin-top: 20px;
 }
-footer {
-    background-color: cadetblue;
+.portfolio .btn-blog {
+    margin: 10px auto;
 }
-.logofooter {
-    width: 100px;
-}
-/*
-
-
-#competences {
-    width: 65%;
-    text-align: left;
-    background-color: aliceblue;
-    border: 2px solid gray;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.35);
-    
-}
-#formastage {
-    border-right-color: 1px #fff;
-    
-}
-.separation1 {
-    margin: 5px;
-    height: 10px;
-    background-color: rgb(255, 255, 255); 
-}
-.contain {
-    margin: 10px;
-    padding: 10px;
-    background: rgb(252, 214, 237);
+.swiper4 {
     width: 100%;
-    flex-direction: row;
-}
-
-
-.interetcontact {
-    width: 100px;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid black;
+    margin: 1rem auto;
+    max-height: 800px;
     
+    overflow: hidden;
 }
-.portfolio {
-    padding: 20px;
-    border: 1px solid black;
+.swiper4 img {
+    width: auto;
+    max-height: 150px;
 }
-
-.boldred
-{
-    color: rgb(255, 6, 6);
-    text-transform: uppercase;
+.swiper4 .swiper-button-next, .swiper4 .swiper-button-prev {
+    color: cadetblue;
     font-weight: bold;
 }
+.swiper-slide {
+    text-align: center;
+}
 
-
-
-
-
-
+.portfolio .btn-blog{
+    background-color: khaki;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+.btn-blog a,.btn-cv a {
+    text-decoration: none;
+    color: black;
+}
+.portfolio .btn-blog:hover {
+    background-color: cadetblue;
+    color: white;
+}
+.swiper-pagination {
+    position: relative!important;
+    padding: 10px;
+    
+}
+.footer1 {
+    background-color: cadetblue;
+    color: white;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+.macaron-footer {
+    width: 100px;
+}
+.footer2 {
+   font-size: 12px;
+   text-align: center;
+}
 .fa-location-dot
 {
-    color: coral;
-}*/
+    color: white;
+}
 
 /*==============================================================
                        PAGE BLOGFOLIO / CONTACT FORM

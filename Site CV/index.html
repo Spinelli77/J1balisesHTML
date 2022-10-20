@@ -21,6 +21,7 @@
     <!-- icones en CDN font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- lien vers css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="CSS/style.css"/>
     <!-- titre -->
     <title>Stéphanie Michaud</title>
@@ -29,151 +30,190 @@
 <body>
     <div id="page" class="container-fluid">
                     <!--============ En-tête ================-->
-        <header>
-            <div class="row entete justify-content-center">
-                <div class="row align-items-start col-lg-4 justify-content-start">1</div>
-                <div class="centrale2 navbar col-lg-4 justify-content-center">       
-                    <img class="logo rounded shadow-sm img-thumbnail" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
-                    <div class="w-100"></div>
-                    <p class="monNom">Stéphanie Michaud</p>  
+        <header class="row entete justify-content-between">
+            
+                <nav class="navbar navbar-expand-lg">
+                    <img class="logo-burger rounded shadow-md img-thumbnail navbar-brand" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                     
+                <div class="collapse navbar-collapse justify-content-evenly" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav col-lg-auto mr-auto mt-2 mt-lg-0 justify-content-between align-items-center">
+                        
+                            <li class="nav-item active"><a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">Blog-Folio</a></li>
+                            <li class="navbar col-lg-4 justify-content-center">
+                            <img class="logo-central rounded shadow-sm img-thumbnail nav-brand" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
+                             
+                            </li>
+                            <li class="nav-item active"><a class="nav-link" href="/Site CV/contact/contact.html">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#">Link fb In</a></li>
+                        
+                        </ul>
                 </div>
-                <div class="row align-items-start col-lg-4 justify-content-end">3</div>
-            </div>
+                </nav>
+            
         </header>
-        <h1>Chargée de Projet Digital - Développeuse Web</h1>
+            <div class="indication-couleur">
+            <h1>Chargée de Projet Digital - En formation développeuse Web</h1>
+            </div>
         <main>    
-<!------------------------------ section 1/4 RESUME ------------------------------->
-        <section class="row resume">
-            <h2>Resume</h2>
-            <div class="sommaire col-lg-8">
-                <p class="col-lg-auto">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
-            </div>
-            <!-- télécharger PJ -->
-            <div class="col-lg-4 text-center align-self-center">
-                <button class="btn btn-warning w-75"><span class="fas fa-download mr-2"></span> Télécharger le CV</button>
-            </div>
-        </section>
-<!----------------------- Fin de section 1/4 RESUME ---------------------------------->
-                    <!--========= Fin de En-tête ============-->
-                    <!--========= SECTIONS MAIN ===============-->
-    
-        <!-- section 2/4 skills et compétences -->
-        <section class="row justify-content-between" >
-             <!-- skills -->
-             <div class="skills col-lg-3" aria-labelledby="competences">
-                <h2>Soft Skills</h2>
-                <ul>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                </ul>
-                <h2>Hard Skills</h2>
-                <ul>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                    <p>BLA 1</p>
-                </ul>
-            </div>
-            <!-- formations-->
-            <div class="formastage col-lg-8 align-self-center" aria-labelledby="formations" >
-                <h2>Formations</h2>
-                            <!-- on crée un lien vers un site externe -->
-                    <!-- l'attribut target avec la valeur _blank nous permet d'ouvrir un nouvel onglet -->
-                <a href="https://www.wf3.fr/" target="_blank">Webforce3</a> 
-                <p> <!-- On peut mettre en valeur le texte grâce des balises simples -->
-                    <i>Mars 2022</i>, <strong>I like cats because they are fat and fluffy. </strong><span class="boldred"> a voir</span>.
-                </p>
-                <br>
-                <a href="https://www.wf3.fr/" target="_blank">Webforce3</a> 
-                <p> <!-- On peut mettre en valeur le texte grâce des balises simples -->
-                    <i>Mars 2022</i>, Formation <b>Chargée de Projet Digital</b> en
-                    distanciel avec l'école <u>Webforce 3</u>, que je
-                    <span class="boldred">ne recommande pas</span> pour son
-                    <mark>manque certain</mark> de communication <strong>et d'organisation</strong>.
-                </p>
-                <h2>Stage</h2>
-                    <ul class="liste">
-                        <li>
-                            <a href="https://romaneche-thorins.fr/fr/" target="_blank">Mairie de Romanèche-Thorins</a>
-                            <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">Autre</a>
-                            <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
-                        </li>
-                    </ul>
-            </div>
-        </section>
-    <!-- section 2 portfolio -->
-        <section class="row portfolio">
-            <h2>Portfolio</h2>
-            <!-- 1 mockup -->
-            <div>
-                <img src="/ressources/images/stellers-sea-eagle-gff32eb085_1920.jpg" width="200px"/>
-                <p>Whatever scratch for poop on couch meowzer.</p>
-            </div>
-            <!-- image-->
-            <div>
-                <img class="rounded shadow-sm " src="https://source.unsplash.com/random/" alt="vignette" width="200
-                px"/> 
-                <p>Caticus cuteicus bawl under human beds and ask for petting see brother cat receive pets, attack out of jealousy</p>
-            </div>
-            <!-- 3 vidéo-->
-            <div>
-                 <p>Crash against wall but walk away like nothing happened i vomit in the bed in the middle of the night.</p>
-            </div>
-            <!-- 4 image-->
-            <div>
-                <img src="/ressources/images/pendulum-g77c3441b4_1920.jpg" width="200
-            px"/>
-                <p>Bite nose of your human i am the best.</p>
-            </div>
-
-            <!-- bouton lien page blogfolio-->
-            <a href="/blogfolio/blogfolio.html">Découvrez mes créations</a>
-        </section>
-        <!-- Loisirs-->
-        <div id="loisirs" aria-labelledby="loisirs">
-            <h2>Intérêts</h2>
-            <i class="fa-solid fa-cat"></i>
-            <i class="fa-solid fa-feather-pointed"></i>
-            <i class="fa-sharp fa-solid fa-mobile-screen"></i>
-        </div>
+    <!------------------------------ section 1/4 RESUME ------------------------------->
+            <section class="row resume">
+                
+                <div class="sommaire col-lg-8">
+                    <h2>Resume</h2>
+                    <p class="col-lg-auto">Indépendante, imaginative et sans limites, toujours à la recherche de la magie et du sens du quotidien, je peux faire preuve d'un enthousiasme contagieux. J'utilise mes compétences en communication pour gérer les situations de travail les plus difficiles avec gentillesse et équité.</p>
+                </div>
+                <!-- télécharger PJ -->
+                <div class="col-lg-4 text-center align-self-center">
+                    <button class="btn btn-cv w-75"><span class="fas fa-download mr-2"></span><a href="#"> Télécharger le CV</a></button>
+                </div>
+            </section>
+    <!----------------------- Fin de section 1/4 RESUME ---------------------------------->
+                        <!--========= Fin de En-tête ============-->
+                        <!--========= SECTIONS MAIN ===============-->
         
-    </main>
+            <!-- section 2/4 skills et compétences -->
+            <section class="row justify-content-between skillsetcompetences" >
+                <!-- skills -->
+                <div class="skills col-lg-4" aria-labelledby="competences">
+                    <h2>Soft Skills</h2>
+                    <ul>
+                        <p>BLA 1</p>
+                        <p>BLA 1</p>
+                        <p>BLA 1</p>
+                        <p>BLA 1</p>
+                        <p>BLA 1</p>
+                        <p>BLA 1</p>
+                    </ul>
+                    <h2>Intérêts</h2>
+                    <ul>
+                        <p><i class="fa-solid fa-cat"></i></p>
+                        <p><i class="fa-solid fa-feather-pointed"></i></p>
+                        <p><i class="fa-sharp fa-solid fa-mobile-screen"></i></p>
+                        <p>BLA 1</p>
+                    </ul>
+                </div>
+                <!-- formations-->
+                <div class="formastage col-lg-7 align-self-center" aria-labelledby="formations" >
+                    <h2>Formations</h2>
+                                <!-- on crée un lien vers un site externe -->
+                        <!-- l'attribut target avec la valeur _blank nous permet d'ouvrir un nouvel onglet -->
+                    <a href="https://www.wf3.fr/" target="_blank">Webforce3</a> 
+                    <p> <!-- On peut mettre en valeur le texte grâce des balises simples -->
+                        <i>Mars 2022</i>, <strong>I like cats because they are fat and fluffy. </strong><span class="boldred"> a voir</span>.
+                    </p>
+                    <br>
+                    <a href="https://www.wf3.fr/" target="_blank">Webforce3</a> 
+                    <p> <!-- On peut mettre en valeur le texte grâce des balises simples -->
+                        <i>Mars 2022</i>, Formation <b>Chargée de Projet Digital</b> en
+                        distanciel avec l'école <u>Webforce 3</u>, que je
+                        <span class="boldred">ne recommande pas</span> pour son
+                        <mark>manque certain</mark> de communication <strong>et d'organisation</strong>.
+                    </p>
+                    <h2>Stage</h2>
+                        <ul class="liste">
+                            <li> Juin 2022 - 2 mois |
+                                <a href="https://romaneche-thorins.fr/fr/" target="_blank"> Mairie de Romanèche-Thorins</a>
+                                <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
+                            </li>
+                            <li> Septembre 2022 - en cours |
+                                <a href="#" target="_blank">Autre</a>
+                                <p>I love cuddles rub against owner because nose is wet yet spill litter box, scratch at owner, destroy all furniture, especially couch and scratch. Human is washing you why halp oh the horror flee scratch hiss bite.</p> 
+                            </li>
+                        </ul>
+                </div>
+                <!-- Loisirs-->
+                <div class="hardskills" aria-labelledby="hard-skills">
+                    <h2>Hard Skills</h2>
+                    <i class="fa-solid fa-cat"></i>
+                    <i class="fa-solid fa-feather-pointed"></i>
+                    <i class="fa-sharp fa-solid fa-mobile-screen"></i>
+                </div>
+            </section>
+            
+        <!-- section 2 portfolio -->
+            <section class="row portfolio">
+                <h2>Portfolio</h2>
+                <!-- Swiper -->
+                <div class="swiper4 mySwiper">
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-wrapper align-content-between">
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=1" alt=""><p>test numero</p></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=2" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=3" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=4" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=5" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=6" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=7" alt=""></div>
+                    <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=8" alt=""></div>
+                    <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    
+                </div>
+                <!-- <div class="swiper4 col-lg-auto">        
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=1" alt=""><p>test numero</p></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=2" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=3" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=4" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=5" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=6" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=7" alt=""></div>
+                        <div class="swiper-slide"><img src="https://source.unsplash.com/random/?id=8" alt=""></div>
+                        <div class="swiper-slide"><img src="/cours/JavaScript/img/item-08.png" alt=""></div>
+                        <div class="swiper-slide"><img src="/cours/JavaScript/img/item-09.png" alt=""></div>
+                    </div> -->
+                     <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
+            
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> -->
+                <!-- bouton lien page blogfolio-->
+                <div class="text-center align-self-center">
+                    <button class="btn btn-blog w-50"><a href="/blogfolio/blogfolio.html"> Découvrez le blog de toutes mes créations</a></button>
+                </div>
+            </section>
+            
+            
+        </main>
                     <!--============ Fin de SECTION MAIN =============-->
-    <footer class="row justify-content-between">
+        <footer class="row footer1 justify-content-between">
          <!-- Contact-->
-         <div class="centrale2 navbar col-lg-4 justify-content-start ">       
-            <img class="logofooter rounded shadow-sm img-thumbnail" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo">
-            <div class="w-100"></div>
-            <p class="monNom">Stéphanie Michaud</p>  
-        </div>
-         <div class="contact col-3" aria-labelledby="competences">
-            <h2>Contact</h2>
-            <address>
-                <!-- lien vers notre courriel -->
-                <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
-                <br>
-                    <!-- lien pour le téléphone -->
-                <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
-                <br>
-                <i class="fa-solid fa-location-dot"></i><span> Localisation</span>
-            </address>
-        </div>
-        <div class="basdepage col-3">
+            <div class="navbar col-lg-4 justify-content-start ">       
+                <img class="macaron-footer rounded shadow-sm img-thumbnail" src="/Site CV/ressources/images/Logo-anim-noir.png" alt="Logo"> 
+            </div>
+            <div class="contact col-3" aria-labelledby="competences">
+                <h2>Contact</h2>
+                <address>
+                    <!-- lien vers notre courriel -->
+                    <a href="mailto:stephaniemichaud85@gmail.com">stephaniemichaud85@gmail.com</a>
+                    <br>
+                        <!-- lien pour le téléphone -->
+                    <a href="tel:+33660934478">+33(0)6.60.93.44.78</a>
+                    <br>
+                    <i class="fa-solid fa-location-dot"></i><span> Romanèche-Thorins</span>
+                </address>
+            </div>
+            <div class="basdepage col-3">
                 <h2>Bla bla bla</h2>
                 <p>Bla bla bla</p>
-                <p>Mentions légales, droits, plan du site</p>
-                <i class="fa-sharp fa-solid fa-copyright"></i>
-        </div>
-</footer>
+            </div>
+        </footer>
+        <footer class="footer2">
+                <i class="fa-sharp fa-solid fa-copyright"><span> Mentions légales, droits, plan du site</span></i>
+        </footer>
+    
 
     </div>
 <!-- CDN BOOTSTRAP JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <!-- SCRIPT JS -->
 <script src="/Site CV/Js/script.js"></script>
 </body>
