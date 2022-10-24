@@ -25,22 +25,6 @@ const swiper4 = new Swiper(".mySwiper", {
     },
   },
 });
-
-// const swiper4 = new Swiper(".swiper4", {
-//     //Optional parameters
-//     //direction : "vertical"
-//   loop: true,
-//   clickable: true,
-//     autoplay: {
-//       Delay: 1000,
-//     },
-//     slidesPerView: 7,
-//     // effect: "coverflow",
-  
-//     navigation: {
-//       nextEl:".swiper-button-next",
-//       prevEl:".swiper-button-prev",
-//     },
     
 // });
   
