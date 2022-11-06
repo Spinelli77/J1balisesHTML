@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- FONCTIONNE AVEC SERVEUR LOCAL NPM INSTALL + NPM START DANS LE BON DOSSIER -->
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>AJAX Dictionnary</title>
+    <meta name="description" content="This is a quick and simple starter pack for the Parcel JS bundler system" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="container">
+        <h1 class="text-center fs-1 mt-5 mb-3">
+            Dictionnaire en ligne
+        </h1>
+        <form class="mt-5 d-flex justify-content-center" id="search-form">
+            <div class="col-auto">
+                <input type="text" class="form-control" id="word-input" placeholder="Entrez un mot ici">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Chercher</button>
+            </div>
+        </form>
+
+
+        <div class="container mt-5">
+            <div>
+                <h2>Définition du mot : <span id="word" class="text-blue"></span></h2>
+
+                <p class="p-3 bg-secondary text-white rounded fw-bold" id="definition">
+                    La définition du mot devra s'afficher ici
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

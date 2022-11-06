@@ -1,0 +1,27 @@
+body {
+    font-family: Helvetica, Tahoma, sans-serif;
+}
+
+
+.click-me_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.click-me_button {
+    padding: 10px 20px;
+    border: 0;
+    background-color: #0E185F;
+    color: white;
+    font-size: large;
+    font-style: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.click-me_button:hover {
+    background-color: #2FA4FF;
+    transform: scale(1.1);
+}

@@ -1,0 +1,16 @@
+{
+  "name": "simple-parcel-template",
+  "description": "Parcel JS Starter Kit",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "Lioruby",
+  "devDependencies": {
+    "@babel/core": "7.14.3",
+    "@babel/preset-env": "7.14.4",
+    "parcel-bundler": "1.12.5"
+  },
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  }
+}

@@ -16,6 +16,9 @@ body {
     border-radius: 5px;
     
 }
+.liens {
+    display: flex;
+}
 .entete li img {
     background-color: transparent;
     background-image: none;
@@ -59,18 +62,23 @@ h1 {
     background: linear-gradient(cadetblue, 80%, white);
     width: 100%;
 }
-/*==============================================================
-                       MAIN
-================================================================*/
-/*------------------ RESUME ----------------------*/
 h2 {
     font-family: 'Annie Use Your Telescope', cursive;
     font-weight: bold;
 }
 h2::first-letter {
-    color: khaki;
+    color: rgb(56, 96, 97);
     font-size: 130%;
-  }
+}
+h3 /*utilisés pour les flip-card-back uniquement*/ {
+    font-weight: bold;
+    margin: 15px 0;
+}
+/*==============================================================
+                       MAIN
+================================================================*/
+/*------------------ RESUME ----------------------*/
+
 .resume, .portfolio {
     background-color: rgb(255, 253, 241);
     margin: 30px auto;
@@ -89,6 +97,10 @@ h2::first-letter {
 .sommaire p::first-letter {
     color: cadetblue;
     font-size: 130%;
+}
+.btn-blog a,.btn-cv a {
+    text-decoration: none;
+    color: black;
 }
 .btn-cv{
     background-color: khaki;
@@ -112,12 +124,7 @@ h2::first-letter {
 .skills li {
     list-style: none;
 }
-.skillName {
-    
-    font-size: 15px;
-    font-style: italic;
-    font-weight: bold;
-}
+
 hr.light {
     background-color: cadetblue;
     border: none;
@@ -139,8 +146,8 @@ hr.dark {
 /*------------------PROGRESS BAR ET ARC----------------------*/
 .half-arc {
     position: relative;
-    width: 150px;
-    height: 75px;
+    width: 100px;
+    height: 50px;
     border-top-left-radius: 120px;
     border-top-right-radius: 120px;
     border-bottom: 0;
@@ -150,9 +157,9 @@ hr.dark {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5px 0;
+    margin:5px auto;
+    font-size: 13px;
 }
-
 .half-arc:before {
     content: "";
     position: absolute;
@@ -167,7 +174,6 @@ hr.dark {
     z-index: 1;
     transform: rotate(270deg);
 }
-
 .half-arc:after {
     content: "";
     position: absolute;
@@ -180,19 +186,22 @@ hr.dark {
     top: 16px;
     left: 16px;
 }
-
 .half-arc span {
     color:black;
     z-index: 3;
     text-align: center;
     align-self:flex-end;
+    margin-bottom: -3px;
     font-weight: 500;
+    overflow: visible;
+
 }
 .formastage {
     border-left: 5px solid cadetblue;
     border-radius: 5px;
     border-bottom: 1px dotted cadetblue;
     padding-left: 3vw;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 }
 .liste {
     list-style: square;
@@ -201,8 +210,9 @@ hr.dark {
 .liste p {
     color: black;
 }
-.hardskills, .wrapper {
+.hardskills {
     margin: 30px 0;
+    border: 3px solid yellow;
     
 }
 .progress {
@@ -210,16 +220,13 @@ hr.dark {
     height: 10px;
     background-color:  rgb(223, 223, 223);
 }
-.hard-progress-design {
+.hard-progress-design, .label {
     margin: 10px 0;
     padding: 0 20px;
-}
-.hard-design p {
     font-weight:500;
+    font-style: italic;
 }
 .picto {
-    
-   
     overflow:visible;
 }
 .progress-bar {
@@ -227,44 +234,90 @@ hr.dark {
 }
 /*------------------ PORTFOLIO ----------------------*/
 .portfolio {
-    margin-top: 20px;
+    margin-top: 20px 0;
 }
 .portfolio .btn-blog {
     margin: 10px auto;
-}
-.swiper4 {
-    width: 100%;
-    margin: 1rem auto;
-    max-height: 800px;
-    overflow: hidden;
-}
-.swiper4 img {
-    width: auto;
-    max-height: 150px;
-}
-.swiper4 .swiper-button-next, .swiper4 .swiper-button-prev {
-    color: cadetblue;
-    font-weight: bold;
-}
-.swiper-slide {
-    text-align: center;
 }
 .portfolio .btn-blog{
     background-color: khaki;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
 }
-.btn-blog a,.btn-cv a {
-    text-decoration: none;
-    color: black;
-}
 .portfolio .btn-blog:hover {
     background-color: cadetblue;
     color: white;
 }
-.swiper-pagination {
-    position: relative!important;
-    padding: 10px;
+/*-------------------------------------------------------------------------------*/
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.portfolio .flip-container {
+    margin: 20px 0;
+    border: 3px solid violet;
 }
+.row {
+    flex-direction: row;
+}
+.flip-card {
+    background-color: transparent;
+    width: 310px;
+    height: 200px;
+    border: 3px solid yellow;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 30px;
+    
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 3px solid blue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-front img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+  .flip2 {
+    object-fit:scale-down!important;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: cadetblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p {
+    font-size: 20px;
+  }
+
 /*==============================================================
                        FOOTER 1 ET 2
 ================================================================*/
@@ -291,6 +344,129 @@ hr.dark {
 /*==============================================================
                        PAGE BLOGFOLIO / CONTACT FORM
 ================================================================*/
+
+.swiper4 {
+    width: 100%;
+    margin: 1rem auto;
+    max-height: 800px;
+    overflow: hidden;
+}
+.swiper4 img {
+    width: auto;
+    max-height: 150px;
+}
+.swiper4 .swiper-button-next, .swiper4 .swiper-button-prev {
+    color: cadetblue;
+    font-weight: bold;
+}
+.swiper-slide {
+    text-align: center;
+}
+
+
+.swiper-pagination {
+    position: relative!important;
+    padding: 10px;
+}
+/*----------------------------------test tab-------------------------------------------------*/
+.tabs-container {
+	width: 100%;
+}
+div#tabs-nav {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+}
+div#tabs-nav a:nth-child(even) {
+	margin: 0 3px;
+}
+a.tabs-menu {
+	display: inline-block;
+	background-color: #1179ac;
+	font-size: 12px;
+	font-family: Arial,Helvetica,sans-serif;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border: solid 2px #1179ac;
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
+}
+a.tabs-menu.tabs-menu-active {
+	background-color: #fff;
+	border: solid 2px #1179ac;
+	color: #6b6b6b;
+	border-bottom: 0;
+}
+.tabs-content {
+	border: solid 2px #1179ac;
+	margin-top: -2px;
+	background-color: #fff;
+	overflow: hidden;
+	line-height: 1.5;
+}
+.tabs-panel {
+	display: none;
+	min-height: 150px;
+	overflow: auto;
+	padding: 10px;
+	height: 200px;
+	font-size: 14px;
+}
+
+/************ CSS Animation ***********/
+
+.animated-tabs {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both; 
+	animation-fill-mode: both;
+}
+@-webkit-keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: scale(.3); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        -webkit-transform: scale(1.05); 
+    } 
+
+    70% { 
+        -webkit-transform: scale(.9); 
+    } 
+
+    100% { 
+         -webkit-transform: scale(1); 
+    } 
+} 
+
+@keyframes bounceIn { 
+    0% { 
+        opacity: 0; 
+        transform: scale(.3); 
+    } 
+
+    50% { 
+        opacity: 1; 
+        transform: scale(1.05); 
+    } 
+
+    70% { 
+        transform: scale(.9); 
+    } 
+
+    100% { 
+        transform: scale(1); 
+    } 
+} 
+
+.bounceIn { 
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn; 
+}
 /*==============================================================
                        PAGE CONTACT / CONTACT FORM
 ================================================================*/
@@ -321,4 +497,6 @@ form input:not(:focus):invalid {
     background: red;
     color: white;
 }
+
+
 

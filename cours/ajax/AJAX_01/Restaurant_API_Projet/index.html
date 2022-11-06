@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Restaurant API</title>
+
+    <meta name="description" content="This is a quick and simple starter pack for the Parcel JS bundler system" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <div class="p-5">
+        <h1 class="text-center my-2 text-5xl mt-5 mb-3">
+            Restaurant Manager
+        </h1>
+        <form class="mt-9 flex justify-center items-center space-x-5 " id="create-restaurant-form">
+            <input
+                type="text"
+                class rounded-xl"
+                id="create-restaurant-name"
+                placeholder="Nom du restaurant"
+            >
+            
+            <input
+                type="text"
+                class="px-5 py-2 border border-grey-500 rounded-xl"
+                id="create-restaurant-address"
+                placeholder="Adresse du restaurant"
+            >
+            
+            <button type="submit" class="w-44 px-5 py-2 bg-green-500 font-bold text-white rounded-xl">
+                Créer
+            </button>
+        </form>
+
+
+        <div>
+            <h2 class="text-3xl mt-16 mb-2 text-center">Liste de tous les restaurants :</h2>
+        </div>
+        <div
+            class="container w-11/12 mx-auto border rounded-lg border-gray-400 p-5 shadow-xl"
+            id="restaurants-container"
+        >
+         <!-- LISTE DES RESTO ICI   
+            <div class="p-5 border-b border-gray-500">
+                <h2 class="text-sm font-bold text-gray-800">Nom du restaurant</h2>
+                <h3 class="mt-1 italic text-gray-500 text-xs">Adresse du restaurant</h3>
+            </div>
+            <div class="p-5 border-b border-gray-500">
+                <h2 class="text-sm font-bold text-gray-800">Nom du restaurant</h2>
+                <h3 class="mt-1 italic text-gray-500 text-xs">Adresse du restaurant</h3>
+            </div>
+            <div class="p-5 border-b border-gray-500">
+                <h2 class="text-sm font-bold text-gray-800">Nom du restaurant</h2>
+                <h3 class="mt-1 italic text-gray-500 text-xs">Adresse du restaurant</h3>
+            </div> -->
+        </div>
+    </div>
+
+    <div>
+        <h1 class="text-center my-2 text-5xl mt-12 mb-3">
+            Supprimer un restaurant
+        </h1>
+        <form class="mt-9 flex justify-center items-center space-x-5" id="delete-restaurant-form">
+            <input
+                type="text"
+                class="px-5 py-2 border border-gray-500 rounded-xl"
+                id="delete-restaurant-input"
+                placeholder="Numéro du restaurant"
+            >
+            
+            <button type="submit" class="w-44 px-5 py-2 bg-red-500 font-bold text-white rounded-xl">
+                Supprimer
+            </button>
+        </form>
+    </div>
+    
+    <div class="h-20"></div>
+    
+
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
